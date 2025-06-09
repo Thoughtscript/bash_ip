@@ -1,0 +1,25 @@
+FROM ubuntu:24.04
+
+RUN echo "Creating working dir and copying files"
+RUN mkdir /app
+WORKDIR /app
+COPY . .
+
+RUN apt update
+RUN apt upgrade -y
+RUN apt autoremove
+
+# Net Tools: netstat
+RUN apt install net-tools
+
+# whois
+RUN apt install netbase whois
+
+# DNS Tools: dig, nslookup
+RUN apt install dnsutils -y
+
+# IPinfo CLI
+RUN apt install curl -y
+RUN curl -Ls https://github.com/ipinfo/cli/releases/download/ipinfo-3.3.1/deb.sh | sh
+
+CMD ["bash", "run.sh"]
