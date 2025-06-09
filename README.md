@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/badge/ipinfo-cli-lightblue.svg)](https://github.com/ipinfo/cli)
 [![](https://img.shields.io/badge/dnsutils-black.svg)](https://manpages.debian.org/jessie/dnsutils/index.html)
+[![](https://img.shields.io/badge/net-tools-red.svg)](https://net-tools.sourceforge.io/)
 
 > Useful Linux DNS, IP Address, Port, Connection, Name Server, Host, Record, Route Table tools. 
 
